@@ -1,7 +1,5 @@
-from django.urls import path
+from django.apps import AppConfig
 
-from . import views
 
-urlpatterns = [
-    path('', views.index)
-]
+class LogregConfig(AppConfig):
+    name = 'logreg'

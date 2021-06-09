@@ -19,7 +19,6 @@ def success(request):
 def register(request):
     print(request.POST)
     # Create a user object
-
     errors = User.objects.basic_validator(request.POST)
     print(errors)
     if len(errors)>0:
